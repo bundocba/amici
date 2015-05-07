@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>FW Scroller</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.5.0</version>
+	<description>FW Scroller</description>
+	<files>
+		<filename module="mod_fwscroller">mod_fwscroller.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_fwscroller.xml</filename>
+		<folder>images</folder>
+	</files>
+
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_WHO_ONLINE" />
+	<config>
+		<fields name="params">
+			
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="moduleclass_sfx" />
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

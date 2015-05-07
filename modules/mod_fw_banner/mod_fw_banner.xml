@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>FW Banner</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.5.0</version>
+	<description>FW Article</description>
+	<files>
+		<filename module="mod_fw_banner">mod_fw_banner.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_fw_banner.xml</filename>
+	</files>
+
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_WHO_ONLINE" />
+	<config>
+		<fields name="params">
+			
+			<fieldset name="basic">
+				<field name="path_img" type="media"  directory="static_banner"
+					require="true" 
+					label="Path IMG" default=''>
+				</field>
+				
+				<field name="background_size" type="list"  
+					label="Background size">
+					<option value="100%">100%</option>
+					<option value="cover">Cover</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="moduleclass_sfx" />
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

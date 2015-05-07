@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension version="3.0.0" type="module" client="site" group="content" method="upgrade">
+    <name>Categories PhotoGallery</name>
+    <author>AddThis, LLC</author>
+    <copyright>Copyright (C) 2013 AddThis, LLC</copyright>
+    <license>GPL 3.0</license>
+    <authorUrl>Anthony</authorUrl>
+    <version>3.0.0</version>
+    <creationDate>19-Feb-2014</creationDate>
+    <description>
+    </description>
+    <files>
+        <filename module="mod_cate_photogallery">mod_cate_photogallery.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <form>
+    <config>
+    <fields name="params">
+		
+		<fieldset name="basic">
+				<field
+					name="categories"
+					type="radio"
+					label="Categories"
+					default="0">
+					<option
+						value="0">All</option>
+					<option
+						value="1">Root</option>
+				</field>
+		</fieldset>
+			
+		<fieldset name="advanced">
+			
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+      
+    </fields>
+    </config>
+    </form>
+</extension>

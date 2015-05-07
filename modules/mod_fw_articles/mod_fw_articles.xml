@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>FW Articles</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.5.0</version>
+	<description>FW Articles</description>
+	<files>
+		<filename module="mod_fw_articles">mod_fw_articles.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_fw_articles.xml</filename>
+	</files>
+
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_WHO_ONLINE" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			
+				<field name="catid" type="category" extension="com_content"
+					require="true" size="5"
+					label="Category">
+					<option value="">--Select category--</option>
+				</field>
+				
+				<field name="limit" type="text" size="5"
+					label="Limit" default='5'>
+				</field>
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="moduleclass_sfx" />
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

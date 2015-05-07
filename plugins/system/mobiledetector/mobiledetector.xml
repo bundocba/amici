@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>Mobile Detector with mobileESP</name>
+	<author>OpenJoomBiz</author>
+	<creationDate>Feb 2012</creationDate>
+	<author>Nguyen OpenJoomBiz</author>
+	<authorEmail>OpenJoomBiz@gmail.com</authorEmail>
+	<authorUrl>http://www.OpenJoomBiz.com</authorUrl>
+	<copyright>Copyright 2012 Nguyen  All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>1.2.0</version>
+	<description>
+		<![CDATA[
+			<p>Auto detect browser agent and switch to the template designed for mobile devices. Using MobileESP library</p>
+			<p>Please set the order of this plugin to bottom of your systemp plugins list</p>
+		]]>
+		
+	</description>
+	
+	<files>
+		<filename plugin="mobiledetector">mobiledetector.php</filename>
+		<filename>mdetect.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="jt-mobile" label="Options">
+				<field name="mobile_switch_enabled" type="radio" default="1"
+					label="Enable Template Switcher"
+					description="If yes, the plugin will let Joomla to use template which set at below box; if it found that user is coming from a mobile device">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="mobile_template" type="folderlist" 
+					label="Switch to Template" 
+					description="The site template to switch to when a mobile device request is detected. Default is jtouch25"
+					directory="../templates" filter="" exclude="" stripext="" 
+					default="" />
+				
+				<field name="mobile_include_tablets" type="radio" default="0"
+					label="Includes Tablets"
+					description="If yes, the template will also applied to iPad and other tablets browsers. Default is No">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+			</fieldset>
+			
+		</fields>
+	</config>
+
+</extension>
